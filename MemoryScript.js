@@ -1,4 +1,4 @@
-var images = ["CASE.jpeg", "CASE.jpeg", "CPU.jpeg", "CPU.jpeg", "GPU.jpeg", "GPU.jpeg", "HDDjpeg.jpeg", "HDDjpeg.jpeg", "MB.jpeg", "MB.jpeg", "PSU.jpeg", "PSU.jpeg", "RAM.jpeg", "RAM.jpeg", "Monitor.jpeg", "Monitor.jpeg"];
+var images = ["case.jpeg", "case.jpeg", "cpu.jpeg", "cpu.jpeg", "gpu.jpeg", "gpu.jpeg", "hdd.jpeg", "hdd.jpeg", "mb.jpeg", "mb.jpeg", "psu.jpeg", "psu.jpeg", "ram.jpeg", "ram.jpeg", "monitor.jpeg", "monitor.jpeg"];
 
 
 var shuf_images = images.sort(() => Math.random() - 0.5);
