@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <style>
+            .mainbody{
+              width:25%;
+              border:solid,1px,black;
+              padding-top:1%;
+              padding-bottom:1%;
+              left:36.5%;
+              position:relative;
+              border-radius:10px;
+              height:500px;
+              top:150px;
+              background-image:url(maxresdefault.jpg);
+              background-color: lightgray;
+              
+            }
+            #nrdisplay{
+                width:94%;
+                height:50px;
+                position:relative;
+                left:2%;
+                background-image:url(pexels-pixabay-53594.jpg);
+                font-size:25px;
+                padding-top:10px;
+                padding-bottom:10px;
+                text-align:right;
+                
+                
+            }
+            button{
+                width:23.2%;
+                display:inline;
+                height:75px;
+                left:2%;
+                position:relative;
+                color:rgb(0, 0, 0);
+                font-weight: bold;
+                border-radius:10px;
+                font-size:50px;
+                background-image: url(download\ \(w21\).jpeg);
+                background-color: skyblue;
+                
+            }
+            .numbers{
+                padding-top:10px;
+            }
+        </style>
+
+    </head>
+    <body>
+        <div class="mainbody">
+            
+            <div class="display">
+                
+                <input type="text" id="nrdisplay" placeholder="Calculator">
+            </div>
+            <div class="numbers">
+                <br>
+                <button type="button" onclick="display('+')">+</button>
+                <button type="button" onclick="display('-')">-</button>
+                <button type="button" onclick="display('/')">/</button>
+                <button type="button" onclick="display('*')">*</button>
+                <br><br><br>
+                <button type="button" onclick="display('1')">1</button>
+                <button type="button" onclick="display('2')">2</button>
+                <button type="button" onclick="display('3')">3</button>
+                <button type="button" onclick="display('4')">4</button>
+                <br><br><br>
+                <button type="button" onclick="display('5')">5</button>
+                <button type="button" onclick="display('6')">6</button>
+                <button type="button" onclick="display('7')">7</button>
+                <button type="button" onclick="display('8')">8</button>
+                <br><br><br>
+                <button type="button" onclick="display('9')">9</button>
+                <button type="button" onclick="display('0')">0</button>
+                <button type="button" onclick="cleardisplay()">C</button>
+                <button type="button" onclick="calculate()">=</button>
+                
+            </div>
+        </div>
+        <script>
+            
+            function display(input){
+                var display = document.getElementById("nrdisplay");
+               nrdisplay.value += input; 
+            }
+            function cleardisplay(){
+                nrdisplay.value= "";
+            }
+            function calculate(){
+                nrdisplay.value=eval(nrdisplay.value);
+            }
+        </script>
+
+    </body>
+</html>
