@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Collector's Catalog</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+        <h1>Item Catalogue</h1>
+    </div>
+        <div id="loginForm">
+            <input type="text" id="username" placeholder="Username" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button id="loginButton">Login</button>
+            <button id="registerButton">Register</button>
+
+            
+            
+        </div>
+        
+
+
+        <div id="loggedInContent" style="display: none;">
+            <button id="logoutButton">Logout</button>
+            <h2>Welcome, <span id="currentUser"></span> </h2>
+           
+            <input type="text" id="searchBar" placeholder="Search items..." class="search-bar">
+            <form id="itemForm" class="add-item-form">
+                <input type="text" id="itemName" placeholder="Item Name" required>
+                <textarea id="itemDescription" placeholder="Item Description" required></textarea>
+                <input type="file" id="itemImage" accept="image/*">
+                <select id="itemStatus">
+                    <option value="free">On Shelf</option>
+                    <option value="used">Used</option>
+                    <option value="defective">Defective</option>
+                </select>
+                <button type="submit">Add Item</button>
+            </form>
+            <div id="itemList" class="main-content"></div>
+        </div>
+    </div>
+    <div class="information" id="informations">
+        <div class="infounder">
+        <p>
+        
+           
+            <h2>What is this site?</h3>
+           
+                This site is meant to help people with different hobbies organise their items, more like a database of items.
+                <br><br>
+                <h2>How do I use it?</h2>
+                Simply input a username, a password and click register to create your account for free!<br>
+                After the register, you just need to input your username, password and click login!<br>
+                <br>
+                To add an item, simply input the Item Name, its description , a photo (optional) and wheter it's on shelf, used or defective and click add item!
+                <br><br>
+                <h2>Can't I just use a paper to keep track of what I have?</h2>
+                Yes, you can. This app is designed to help the user quickly find items in their collection. It is very helpful if you have a large collection and can't remember what you have, helping you avoid mistakenly buying something you already have.
+                <br><br>
+                <h2>What if I don't have a computer?</h2>
+                Don't worry! This site is optimized for mobile devices, so you can enjoy your hobby on the go.
+                
+        </p>
+            </div>
+        </div>
+   
+    <script src="script.js"></script>
+</body>
+</html>

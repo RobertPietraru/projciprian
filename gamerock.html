@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Rock Paper Scissors Game</title>
+  <link rel="stylesheet" href="stylerock.css">
+</head>
+<body>
+
+<div class="button-container">
+    <button onclick="rock()" id="rockoption" >Rock</button>
+    <button onclick="paper()" id="paperoption">Paper</button>
+    <button onclick="scissors()" id="scissorsoption">Scissors</button>
+    <button onclick="StartGame()" id="start">PLAY!</button>
+</div>
+<label for="results">Results:</label>
+<input type="text" id="results" readonly>
+<br>
+<label for="Display">You Chose:</label>
+<input type="text" id="Display" readonly>
+<br>
+<label for="ComputerDisplay">Computer chose :</label>
+<input type="text" id="ComputerDisplay" readonly>
+<br><br>
+<label for="YouWon"> You won :</label>
+<input type="text" id="YouWon" placeholder="0" readonly>
+<br>
+<label for="ComputerWon"> Computer won: :</label>
+<input type="text" id="ComputerWon" readonly placeholder="0">
+
+<script src="scriptrock.js"></script>
+
+</body>
+</html>

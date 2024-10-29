@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>Guess the word!</title>
+        <link rel="stylesheet" href="stiluri.css">
+
+    </head>
+
+    <body>
+        <div class="everything">
+
+        <div class="header">
+            <h1>How many words can you guess in 30 seconds?</h1>
+        </div>
+        <br><br>
+        <div class="content">
+            
+
+            
+            <div class="inputs">
+            <label for="letters">The word has: </label>
+            <input type="text" id="letters" readonly="readonly" placeholder="Press start to begin!">
+            <br><br>
+            <label for="timer" >Timer: </label>
+            <input type="text" id="timer" readonly="readonly" placeholder="Press start to begin!">
+            <br><br>
+            <label for="lifes">Lifes: </label>
+            <input type="text" id="lifes" readonly="readonly" placeholder="Press start to begin!">
+            <br><br>
+
+            <button onclick="WordChange(),lettercount()" id="GameStart">Start the game!</button>
+            <br><br>
+            <label for="result">The hint is:</label>
+            <input type="text" id="result" readonly="readonly" placeholder="Press start to begin!">
+            <br><br>
+            <button type="button" onclick="rightwrong()" id="submitanswer" disabled>Submit Answer</button>
+            <br><br>
+            <label for="answer">Your answer here:</label>
+            <input type="text" id="answer" placeholder="Type here!">
+        </div>
+
+        </div>
+
+        <div class="footer">
+
+
+        </div>
+    </div>
+
+        <script src="gusesstheword.js"></script>
+    </body>
+
+</html>
